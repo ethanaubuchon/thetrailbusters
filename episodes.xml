@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://thetrailbusters.com/episodes.xml" rel="self" type="application/atom+xml" /><link href="https://thetrailbusters.com/" rel="alternate" type="text/html" /><updated>2020-07-14T23:05:58-04:00</updated><id>https://thetrailbusters.com/episodes.xml</id><title type="html">The Trail Busters | Episodes</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Gearing_up_for_adventure</title><link href="https://thetrailbusters.com/episodes/2020-07-16-gearing_up_for_adventure.html" rel="alternate" type="text/html" title="Gearing_up_for_adventure" /><published>2020-07-16T00:00:00-04:00</published><updated>2020-07-16T00:00:00-04:00</updated><id>https://thetrailbusters.com/episodes/gearing_up_for_adventure</id><content type="html" xml:base="https://thetrailbusters.com/episodes/2020-07-16-gearing_up_for_adventure.html">&lt;hr /&gt;
+&lt;p&gt;layout: podcast
+title: “Gearing Up for Adventure”
+slug: “ep1”
+date: 2020-07-16 08:00:00
+explicit: false
+categories: [“hiking”, “camping”, “outdoors”, “adventure”, “travel”, “gear”]
+author: Ethan Aubuchon, Bing Lin, and Will Damon
+pocast_file: the-trail-busters-ep1-gearing-up-for-adventure.mp3
+podcast_summary: “In this episode, we dive into the gear each of us carries, loves, loathes, and yearns.”
+podcast_image: “/imgs/trailbusters-01.png”
+podcast_image_alt: “The Trail Busters Logo”
+mp3&lt;em&gt;url: “https://www.dropbox.com/s/r8hx7ht8r79mrl7/The%20Trail%20Busters%20001&lt;/em&gt;%20Gearing%20Up%20For%20Adventure.mp3?dl=1”&lt;/p&gt;</content><author><name></name></author><summary type="html">layout: podcast title: “Gearing Up for Adventure” slug: “ep1” date: 2020-07-16 08:00:00 explicit: false categories: [“hiking”, “camping”, “outdoors”, “adventure”, “travel”, “gear”] author: Ethan Aubuchon, Bing Lin, and Will Damon pocast_file: the-trail-busters-ep1-gearing-up-for-adventure.mp3 podcast_summary: “In this episode, we dive into the gear each of us carries, loves, loathes, and yearns.” podcast_image: “/imgs/trailbusters-01.png” podcast_image_alt: “The Trail Busters Logo” mp3url: “https://www.dropbox.com/s/r8hx7ht8r79mrl7/The%20Trail%20Busters%20001%20Gearing%20Up%20For%20Adventure.mp3?dl=1”</summary></entry></feed>
