@@ -11,10 +11,10 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
  
 <channel>
 <title>The Trail Busters</title>
-<atom:link href="https://thetrailbusters.com/feed/podcast" rel="self" type="application/rss+xml" />
+<atom:link href="https://thetrailbusters.com/episodes" rel="self" type="application/rss+xml" />
 <link>https://thetrailbusters.com</link>
 <description>The Trail Busters podcast explores the realm of outdoor adventures. Three friends, Ethan, Bing and Will, share the good, the bad, and the goofy experiences of their outdoor adventures.</description>
-<lastBuildDate>Wed, 15 Jul 2020 00:17:51 -0400</lastBuildDate>
+<lastBuildDate>Wed, 15 Jul 2020 00:18:56 -0400</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
