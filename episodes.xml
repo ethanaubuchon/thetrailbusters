@@ -14,7 +14,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 <atom:link href="https://thetrailbusters.com/episodes" rel="self" type="application/rss+xml" />
 <link>https://thetrailbusters.com</link>
 <description>The Trail Busters podcast explores the realm of outdoor adventures. Three friends, Ethan, Bing and Will, share the good, the bad, and the goofy experiences of their outdoor adventures.</description>
-<lastBuildDate>Wed, 15 Jul 2020 00:18:56 -0400</lastBuildDate>
+<lastBuildDate>Wed, 15 Jul 2020 00:22:18 -0400</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
@@ -41,6 +41,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 
   <item>
     <title>Gearing_up_for_adventure</title>
+    <link>https://thetrailbusters.com/podcasts//episodes/2020-07-16-gearing_up_for_adventure.html</link>
     <pubDate>Thu, 16 Jul 2020 00:00:00 -0400</pubDate>
     <dc:creator><![CDATA[]]></dc:creator>
 
