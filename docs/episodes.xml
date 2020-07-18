@@ -44,7 +44,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 {% for ep in site.episodes %}
   <item>
     <title>{{ ep.title }}</title>
-    <link>{{ site.url }}/podcasts/{{ ep.url }}</link>
+    <link>{{ site.url }}/podcasts/{{ ep.pocast_file }}</link>
     <pubDate>{{ ep.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
     <dc:creator><![CDATA[{{ site.author | cdata_escape }}]]></dc:creator>
 {% for category in ep.categories %}
@@ -53,7 +53,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 {% for category in ep.tags %}
     <category><![CDATA[{{ category | cdata_escape }}]]></category>
 {% endfor %}
-    <guid isPermaLink="{% if ep.podcast_guid %}false{% else %}true{% endif %}">{{ site.url }}{% if ep.podcast_guid %}/{{ ep.podcast_guid }}{% else %}{{ ep.url }}{% endif %}</guid>
+    <guid isPermaLink="{% if ep.podcast_guid %}false{% else %}true{% endif %}">{{ site.url }}{% if ep.podcast_guid %}/{{ ep.podcast_guid }}{% else %}{{ ep.pocast_file }}{% endif %}</guid>
     <description>
         <![CDATA[{{ ep.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
     </description>
@@ -61,7 +61,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
         <![CDATA[{{ ep.content | expand_urls: site.url | cdata_escape }}]]>
     </content:encoded>
 
-    <enclosure url="./podcasts/{{ ep.podcast_file }}" length="{{ ep.podcast_podcast_length }}" type="audio/mpeg" />
+    <enclosure url="./podcasts/{{ ep.podcast_file }}" length="{{ ep.podcast_length }}" type="audio/mpeg" />
     <itunes:subtitle><![CDATA[{{ ep.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]></itunes:subtitle>
     <itunes:summary><![CDATA[{{ ep.content | expand_urls: site.url | cdata_escape }}]]></itunes:summary>
     <itunes:author>{{ site.podcast_author }}</itunes:author>

@@ -12,4 +12,3 @@ podcast_image: "/imgs/trailbusters.jpg"
 podcast_image_alt: "The Trail Busters Logo"
 podcast_duration: "35:03"
 podcast_length: 51658166
-mp3_url: "https://www.dropbox.com/s/r8hx7ht8r79mrl7/The%20Trail%20Busters%20001_%20Gearing%20Up%20For%20Adventure.mp3?dl=1"
