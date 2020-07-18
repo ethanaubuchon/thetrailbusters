@@ -8,7 +8,7 @@ categories: ["hiking", "camping", "outdoors", "adventure", "travel", "gear"]
 author: Ethan Aubuchon, Bing Lin, and Will Damon
 pocast_file: the-trail-busters-ep1-gearing-up-for-adventure.mp3
 podcast_summary: "In this episode, we dive into the gear each of us carries, loves, loathes, and yearns."
-podcast_image: "/imgs/trailbusters-01.png"
+podcast_image: "/imgs/trailbusters.jpg"
 podcast_image_alt: "The Trail Busters Logo"
 podcast_duration: "35:03"
 podcast_length: 51658166
