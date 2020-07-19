@@ -52,7 +52,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
       <guid isPermaLink="{% if ep.podcast_guid %}false{% else %}true{% endif %}">{{ site.url }}{% if ep.podcast_guid %}/{{ ep.podcast_guid }}{% else %}{{ ep.pocast_file }}{% endif %}</guid>
       <description>{{ep.summary}}</description>
   
-      <enclosure url="{{ site.url }}{{ ep.podcast_file }}" length="{{ ep.podcast_length }}" type="audio/mpeg" />
+      <enclosure url="{{ site.url }}/podcasts/{{ ep.podcast_file }}" length="{{ ep.podcast_length }}" type="audio/mpeg" />
       <itunes:summary>{{ep.summary}}</itunes:summary>
       <itunes:author>{{ site.podcast_author }}</itunes:author>
       <itunes:image href="{{ site.url }}{{ site.podcast_album_art }}" />
