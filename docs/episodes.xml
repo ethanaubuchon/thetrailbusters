@@ -14,7 +14,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
  
   <channel>
     <title>{{ site.podcast_title }}</title>
-    <atom:link href="{{ site.url }}/episodes.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ site.url }}/episodes" rel="self" type="application/rss+xml" />
     <link>{{ site.url }}</link>
     <description>{{ site.podcast_description }}</description>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
@@ -45,24 +45,15 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
       <title>{{ ep.title }}</title>
       <link>{{ site.url }}/podcasts/{{ ep.pocast_file }}</link>
       <pubDate>{{ ep.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
-      <dc:creator><![CDATA[{{ site.author | cdata_escape }}]]></dc:creator>
+      <dc:creator>{{ site.author}}</dc:creator>
       {% for category in ep.categories %}
-      <category><![CDATA[{{ category | cdata_escape }}]]></category>
-      {% endfor %}
-      {% for category in ep.tags %}
-      <category><![CDATA[{{ category | cdata_escape }}]]></category>
+      <category>{{ category}}</category>
       {% endfor %}
       <guid isPermaLink="{% if ep.podcast_guid %}false{% else %}true{% endif %}">{{ site.url }}{% if ep.podcast_guid %}/{{ ep.podcast_guid }}{% else %}{{ ep.pocast_file }}{% endif %}</guid>
-      <description>
-        <![CDATA[{{ ep.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
-      </description>
-      <content:encoded>
-        <![CDATA[{{ ep.content | expand_urls: site.url | cdata_escape }}]]>
-      </content:encoded>
+      <description>{{ep.summary}}</description>
   
-      <enclosure url="./podcasts/{{ ep.podcast_file }}" length="{{ ep.podcast_length }}" type="audio/mpeg" />
-      <itunes:subtitle><![CDATA[{{ ep.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]></itunes:subtitle>
-      <itunes:summary><![CDATA[{{ ep.content | expand_urls: site.url | cdata_escape }}]]></itunes:summary>
+      <enclosure url="{{ site.url }}{{ ep.podcast_file }}" length="{{ ep.podcast_length }}" type="audio/mpeg" />
+      <itunes:summary>{{ep.summary}}</itunes:summary>
       <itunes:author>{{ site.podcast_author }}</itunes:author>
       <itunes:image href="{{ site.url }}{{ site.podcast_album_art }}" />
       <itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
