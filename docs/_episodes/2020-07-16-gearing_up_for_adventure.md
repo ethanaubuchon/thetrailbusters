@@ -1,5 +1,5 @@
 ---
-layout: podcast
+layout: episode
 title: "Gearing Up for Adventure"
 slug: "ep1"
 date: 2020-07-16 08:00:00

@@ -35,8 +35,6 @@ feed:
   collections:
     episodes:
       path: episodes.xml
-    posts:
-      path: posts.xml
 
 # Exclude from processing.
 # The following items will not be processed, by default.
