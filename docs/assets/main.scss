@@ -1,0 +1,20 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+@font-face {
+  font-family: "Phosphate Inline";
+  src: url("/assets/fonts/Phosphate\ Inline\ font.ttf");
+}
+
+.site-header {
+  background-color: #603913;
+  .site-title {
+    font-family: "Phosphate Inline";
+    text-transform: uppercase;
+    color: #C49A6C;
+    font-size: 36px;
+  }
+}
