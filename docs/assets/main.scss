@@ -11,11 +11,41 @@
 
 .site-header {
   background-color: #603913;
-  
+
   .site-title {
     font-family: "Phosphate Inline";
     text-transform: uppercase;
     color: #C49A6C;
     font-size: 36px;
+    padding: 20px 20px 0px 20px;
   }
 }
+
+.hero-header {
+  background-color: #603913;
+
+  .site-title {
+    font-family: "Phosphate Inline";
+    text-transform: uppercase;
+    color: #C49A6C;
+    font-size: 36px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .hero-image {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    min-width: 630px;
+    // max-width: 1490px;
+
+    img {
+      position: relative;
+      top: 40%;
+      transform: translateY(-40%);
+    }
+  }
+}
+
+
+
