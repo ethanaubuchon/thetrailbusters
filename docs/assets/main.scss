@@ -9,25 +9,41 @@
   src: url("/assets/fonts/Phosphate\ Inline\ font.ttf");
 }
 
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("/assets/fonts/Montserrat-Regular.ttf");
+}
+
+$dark-brown: #3C2415;
+$background-brown: #603913;
+$light-brown: #8E6A2C;
+$font-brown: #C49A6C;
+$water-blue: #231F20;
+$tree-green: #026735;
+
+body {
+  font-family: "Montserrat Regular";
+}
+
 .site-header {
-  background-color: #603913;
+  background-color: $background-brown;
 
   .site-title {
     font-family: "Phosphate Inline";
     text-transform: uppercase;
-    color: #C49A6C;
+    color: $font-brown;
     font-size: 36px;
     padding: 20px 20px 0px 20px;
   }
 }
 
 .hero-header {
-  background-color: #603913;
+  background-color: $background-brown;
 
   .site-title {
     font-family: "Phosphate Inline";
     text-transform: uppercase;
-    color: #C49A6C;
+    color: $font-brown;
     font-size: 36px;
     padding: 20px 20px 0px 20px;
   }
@@ -37,7 +53,6 @@
     width: 100%;
     overflow: hidden;
     min-width: 630px;
-    // max-width: 1490px;
 
     img {
       position: relative;
@@ -47,5 +62,53 @@
   }
 }
 
+.episode-details {
+  padding: 24px;
+  background: $dark-brown;
+  border-radius: 6px;
 
+  .title {
+    text-transform: uppercase;
+    color: $font-brown;
+    font-size: 24px;
+    padding-bottom: -10px;
+    margin: 0;
+  }
+
+  .post-meta {
+    padding-left: 6px;
+  }
+
+  .episode-info {
+    display: flex;
+    margin-top: 6px;
+    padding-top: 12px;
+    border-top: $light-brown solid 1px;
+    justify-content: space-between;
+
+    .image-box {
+      flex-grow:0;
+      flex-shrink:0;
+
+      img {
+        height: 150px;
+        width: 150px;
+        border: $light-brown solid 1px;
+      }
+    }
+
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0px 12px;
+      color: $font-brown;
+
+      .player audio {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 

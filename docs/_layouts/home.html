@@ -11,10 +11,10 @@
       <div class="wrapper">
         <div class="home">
           {%- if site.episodes.size > 0 -%}
-          <h2 class="post-list-heading">Podcast Episodes</h2>
-          {%- include episode-list.html -%}
+          <h2 class="latest-episode-heading">Latest Episode</h2>
 
-          <p class="rss-subscribe"><a href="/episodes.xml">Podcast Feed</a></p>
+          {%- include episode-details.html episode=site.episodes.first-%}
+
           {%- endif %}
         </div>
       </div>

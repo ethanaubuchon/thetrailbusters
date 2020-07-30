@@ -1,0 +1,28 @@
+{%- assign ep = include.episode -%}
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+<div class="episode-details">
+  <h3 class="title">
+    {{ ep.title }}
+  </h3>
+  <span class="post-meta">
+    Episode #{{ ep.episode_number }}
+    -
+    {{ ep.date | date: date_format }}
+  </span>
+  <div class="episode-info">
+    <div class="image-box">
+      <img src="{{ep.podcast_image}}">
+    </div>
+    <div class="info-box">
+      <div class="summary">
+        {{ ep.podcast_summary }}
+      </div>
+      <div class="player">
+        <audio controls src="/podcasts/{{ep.podcast_file}}">
+          Your browser does not support the <code>audio</code> element.
+        </audio>
+      </div>
+    </div>
+  </div>
+</div>
