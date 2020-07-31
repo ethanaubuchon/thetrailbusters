@@ -6,9 +6,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   the goofy experiences of their outdoor adventures.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thetrailbusters.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+#social
 twitter_username: thetrailbusters
 facebook_username: thetrailbusters
 instagram_username: thetrailbusters
+
+#feeds
+apple_podcasts: https://podcasts.apple.com/ca/podcast/the-trail-busters/id1524819287
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly90aGV0cmFpbGJ1c3RlcnMuY29tL2VwaXNvZGVzLnhtbA
+spotify_podcasts: https://open.spotify.com/show/7vkNVZ1XQHCIL65mwlKAiR
+rss_feed: https://thetrailbusters.com/episodes.xml
 
 # Podcast config
 podcast_url: http://www.thetrailbusters.com

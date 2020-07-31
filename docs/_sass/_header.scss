@@ -46,10 +46,20 @@
     border-top: 1px solid $font-brown;
 
     li {
-      color: $font-brown;
+      a {
+        color: $font-brown;
+        text-decoration: none;
+      }
+
       margin: 0;
       list-style-type: none;
       width: 100%;
+
+      .subscribe-platform-icon svg {
+        height: 24px;
+        width: 24px;
+        fill: $font-brown;
+      }
     }
   }
 
@@ -167,6 +177,7 @@
           margin: 0;
           padding: 12px;
           background-color: $background-brown;
+          text-align: left;
         }
 
         li:hover {
