@@ -1,3 +1,26 @@
-<header class="site-header" role="banner">
-  <a class="site-title" rel="author" href="/">{{ site.title }}</a>
-</header>
+<nav class="navbar">
+  <span class="navbar-toggle" id="js-navbar-toggle">
+      {% include icons/solid/bars.svg %}
+  </span>
+  <a class="site-title" rel="author" href="/">
+    {{ site.title }}
+  </a>
+  <ul class="main-nav" id="js-menu">
+    <li>
+      <a href="/episodes" class="nav-links">Episodes</a>
+    </li>
+    <!-- <li>
+      <a href="#" class="nav-links">Subscribe</a>
+    </li> -->
+  </ul>
+</nav>
+
+<script type="text/javascript">
+  let mainNav = document.getElementById('js-menu');
+  let navBarToggle = document.getElementById('js-navbar-toggle');
+
+  navBarToggle.addEventListener('click', function () {
+
+      mainNav.classList.toggle('active');
+  });
+</script>

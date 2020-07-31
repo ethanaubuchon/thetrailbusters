@@ -49,9 +49,23 @@ body {
   }
 }
 
-.site-header {
+.navbar {
   background-color: $dark-brown;
   border: 0;
+
+  .navbar-toggle {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+
+    svg {
+      height: 24px;
+      width: 24px;
+      fill: $font-brown;
+    }
+  }
 
   .site-title {
     font-family: "Phosphate Inline";
@@ -59,11 +73,95 @@ body {
     color: $font-brown;
     font-size: 36px;
     padding: 20px 20px 0px 20px;
+
+    display: inline-block;
+    text-decoration: none;
+    float: none;
+  }
+
+  .main-nav {
+    list-style-type: none;
+    display: none;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+
+  .nav-links {
+    text-decoration: none;
+    color: $font-brown;
+  }
+
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    background-color: $dark-brown;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-toggle {
+      display: none;
+    }
+
+    .site-title {
+      font-family: "Phosphate Inline";
+      text-transform: uppercase;
+      color: $font-brown;
+      font-size: 36px;
+      padding: 20px 20px 0px 20px;
+
+      display: inline-block;
+      text-decoration: none;
+      float: none;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        margin-bottom: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-links {
+      text-decoration: none;
+      color: $font-brown;
+      margin-left: 40px;
+    }
+
+    .main-nav li {
+      text-align: center;
+      margin: 12px auto;
+    }
   }
 }
 
 .hero-header {
   background-color: $dark-brown;
+
+  .navbar {
+    .navbar-toggle {
+      position: absolute;
+      top: calc(250px + 24px);
+      right: 20px;
+      cursor: pointer;
+      color: rgba(255,255,255,0.8);
+
+      svg {
+        height: 24px;
+        width: 24px;
+        fill: $font-brown;
+      }
+    }
+  }
 
   .site-title {
     font-family: "Phosphate Inline";
