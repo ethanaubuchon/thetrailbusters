@@ -1,7 +1,7 @@
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
 <div class="episode-list">
-  {%- for episode in include.episodes -%}
+  {%- for episode in include.episodes reversed -%}
   <a class="episode-link" href="{{ episode.url | relative_url }}">
     <div class="episode-list-item">
       <div class="image-box">

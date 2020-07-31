@@ -13,7 +13,7 @@
           {%- if site.episodes.size > 0 -%}
           <h2 class="latest-episode-heading">Latest Episode</h2>
 
-          {%- include episode-details.html episode=site.episodes.first-%}
+          {%- include episode-details.html episode=site.episodes.last -%}
 
           {%- endif %}
         </div>
