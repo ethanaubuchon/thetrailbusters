@@ -1,23 +1,30 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">{{ site.title | escape }}</li>
-          {%- if site.email -%}
-          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-    </div>
-
-  </div>
+  <ul class="contact-list">
+    <li class="contact-us">Contact Us:</li>
+    <li>
+      <a class="icon-link" href="mailto:{{ site.email }}">
+        <span class="icon icon--email">
+          {% include icons/regular/envelope.svg %}
+        </span>
+      </a>
+      <a class="icon-link" href="https://facebook.com/{{ site.facebook_username }}">
+        <span class="icon icon--facebook">
+          {% include icons/brands/facebook.svg %}
+        </span>
+      </a>
+      <a class="icon-link" href="https://instagram.com/{{ site.instagram_username }}">
+        <span class="icon icon--instagram">
+          {% include icons/brands/instagram.svg %}
+        </span>
+      </a>
+      <a class="icon-link" href="https://twitter.com/{{ site.twitter_username }}">
+        <span class="icon icon--twitter">
+          {% include icons/brands/twitter.svg %}
+        </span>
+      </a>
+    </li>
+  </ul>
 
 </footer>

@@ -30,8 +30,27 @@ body {
   font-family: "Montserrat Regular";
 }
 
+.site-footer {
+  padding-bottom: 0;
+  padding-left: 30px;
+
+  .contact-us {
+    color: $light-brown
+  }
+
+  .icon-link {
+    text-decoration: none;
+  }
+
+  .icon svg {
+    height: 20px;
+    width: 30px;
+    fill: $light-brown;
+  }
+}
+
 .site-header {
-  background-color: $background-brown;
+  background-color: $dark-brown;
   border: 0;
 
   .site-title {
@@ -44,7 +63,7 @@ body {
 }
 
 .hero-header {
-  background-color: $background-brown;
+  background-color: $dark-brown;
 
   .site-title {
     font-family: "Phosphate Inline";
