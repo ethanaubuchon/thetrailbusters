@@ -1,0 +1,224 @@
+.navbar {
+  background-color: $dark-brown;
+  border: 0;
+
+  .navbar-toggle {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+
+    svg {
+      height: 24px;
+      width: 24px;
+      fill: $font-brown;
+    }
+  }
+
+  li .subscribe-menu {
+    .down-caret, .plus, .minus {
+      display: none;
+
+      svg {
+        height: 12px;
+        width: 12px;
+        fill: $font-brown;
+      }
+    }
+
+    .plus.active, .minus.active {
+      display: inline-block;
+    }
+  }
+
+  li .subscribe-menu:hover {
+    cursor: pointer;
+  }
+
+  .subscribe-dropdown {
+    display: none;
+    margin: 0;
+    margin-top: 15px;
+    padding-left: 12px;
+    padding: 0;
+
+    border-top: 1px solid $font-brown;
+
+    li {
+      color: $font-brown;
+      margin: 0;
+      list-style-type: none;
+      width: 100%;
+    }
+  }
+
+  .subscribe-dropdown.active {
+    display: block;
+  }
+
+  .site-title {
+    font-family: "Phosphate Inline";
+    text-transform: uppercase;
+    color: $font-brown;
+    font-size: 36px;
+    padding: 20px 20px 0px 20px;
+
+    display: inline-block;
+    text-decoration: none;
+    float: none;
+  }
+
+  .main-nav {
+    list-style-type: none;
+    display: none;
+    margin-left: 0;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+
+  .nav-links {
+    text-decoration: none;
+    color: $font-brown;
+  }
+
+  .main-nav li {
+    margin: 15px auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    background-color: $dark-brown;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-toggle {
+      display: none;
+    }
+
+    .subscribe-menu {
+      display: block;
+      transition-duration: 0.5s;
+    }
+
+    .site-title {
+      font-family: "Phosphate Inline";
+      text-transform: uppercase;
+      color: $font-brown;
+      font-size: 36px;
+      padding: 20px 20px 0px 20px;
+
+      display: inline-block;
+      text-decoration: none;
+      float: none;
+    }
+
+    .main-nav {
+      display: flex;
+      margin-right: 30px;
+      margin-bottom: 0;
+      flex-direction: row;
+      justify-content: flex-end;
+      height: 75px;
+
+      li {
+        text-align: center;
+        padding: 24px 0;
+        margin: 0;
+
+        .down-caret {
+          display: inline-block;
+        }
+
+        .plus.active, .minus.active {
+          display: none;
+        }
+
+        .nav-links {
+          text-decoration: none;
+          color: $font-brown;
+          margin-right: 40px;
+        }
+      }
+
+      .subscribe-dropdown {
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 27px;
+        list-style-type: none;
+        border: 0;
+
+        right: 30px;
+        display: none;
+
+        li {
+          clear: both;
+          width: 100%;
+          border: 1px solid $dark-brown;
+          border-top: 0;
+          color: $font-brown;
+          margin: 0;
+          padding: 12px;
+          background-color: $background-brown;
+        }
+
+        li:hover {
+          background-color: $dark-brown;
+        }
+      }
+
+      li:hover .subscribe-dropdown,
+      .subscribe-menu .subscribe-dropdown:hover {
+        display: block;
+      }
+    }
+  }
+}
+
+.hero-header {
+  background-color: $dark-brown;
+
+  .navbar {
+    .navbar-toggle {
+      position: absolute;
+      top: calc(250px + 24px);
+      right: 20px;
+      cursor: pointer;
+      color: rgba(255,255,255,0.8);
+
+      svg {
+        height: 24px;
+        width: 24px;
+        fill: $font-brown;
+      }
+    }
+  }
+
+  .site-title {
+    font-family: "Phosphate Inline";
+    text-transform: uppercase;
+    color: $font-brown;
+    font-size: 36px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .hero-image {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    min-width: 630px;
+
+    img {
+      position: relative;
+      top: 40%;
+      transform: translateY(-40%);
+    }
+  }
+}

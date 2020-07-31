@@ -1,0 +1,18 @@
+.site-footer {
+  padding-bottom: 0;
+  padding-left: 30px;
+
+  .contact-us {
+    color: $light-brown
+  }
+
+  .icon-link {
+    text-decoration: none;
+  }
+
+  .icon svg {
+    height: 20px;
+    width: 30px;
+    fill: $light-brown;
+  }
+}

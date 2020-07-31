@@ -9,9 +9,26 @@
     <li>
       <a href="/episodes" class="nav-links">Episodes</a>
     </li>
-    <!-- <li>
-      <a href="#" class="nav-links">Subscribe</a>
-    </li> -->
+    <li>
+      <div class="nav-links subscribe-menu" id="subscribe-menu-toggle">
+        <span class="subscribe-text">Subscribe</span>
+        <span class="down-caret">
+          {% include icons/solid/caret-down.svg %}
+        </span>
+        <span class="minus" id="subscribe-minus">
+          {% include icons/solid/minus.svg %}
+        </span>
+        <span class="plus active" id="subscribe-plus">
+          {% include icons/solid/plus.svg %}
+        </span>
+      </div>
+      <ul class="subscribe-dropdown" id="subscribe-dropdown">
+        <li>Apple Podcasts</li>
+        <li>Google Podcasts</li>
+        <li>Spotify Podcasts</li>
+        <li>RSS Feed</li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -20,7 +37,19 @@
   let navBarToggle = document.getElementById('js-navbar-toggle');
 
   navBarToggle.addEventListener('click', function () {
-
       mainNav.classList.toggle('active');
+  });
+
+  let subscribeDropdown = document.getElementById('subscribe-dropdown');
+  let subscribeMinus = document.getElementById('subscribe-minus');
+  let subscribePlus = document.getElementById('subscribe-plus');
+
+  let subscribeMenuToggle = document.getElementById('subscribe-menu-toggle');
+
+  subscribeMenuToggle.addEventListener('click', function () {
+
+    subscribeMinus.classList.toggle('active');
+    subscribePlus.classList.toggle('active');
+    subscribeDropdown.classList.toggle('active');
   });
 </script>
