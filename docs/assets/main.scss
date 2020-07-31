@@ -14,6 +14,11 @@
   src: url("/assets/fonts/Montserrat-Regular.ttf");
 }
 
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
 $dark-brown: #3C2415;
 $background-brown: #603913;
 $light-brown: #8E6A2C;
@@ -27,6 +32,7 @@ body {
 
 .site-header {
   background-color: $background-brown;
+  border: 0;
 
   .site-title {
     font-family: "Phosphate Inline";
@@ -111,3 +117,54 @@ body {
   }
 }
 
+.episode-meta {
+  font-size: $small-font-size;
+}
+
+.episode-list {
+  .episode-link {
+    text-decoration: none;
+  }
+
+  .episode-list-item:hover {
+    background-color: $light-brown;
+  }
+
+  .episode-list-item {
+    border: 2px solid $light-brown;
+    border-radius: 6px;
+    padding: 12px;
+    display: flex;
+
+    .image-box {
+      flex-grow:0;
+      flex-shrink:0;
+
+      img {
+        height: 150px;
+        width: 150px;
+        border-radius: 6px;
+      }
+    }
+
+    .info-box {
+      padding: 0px 12px;
+      color: $dark-brown;
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+
+      h3 {
+        margin: 0;
+      }
+
+      .description {
+        width: 100%;
+        margin-top: 6px;
+        padding: 6px 0px;
+        border-top: $dark-brown solid 1px;
+        overflow: hidden;
+      }
+    }
+  }
+}

@@ -1,49 +1,26 @@
-<ul class="post-list">
-  {%- for episode in site.episodes -%}
-  <li>
-    <h3>
-      <a class="post-link" href="{{ episode.url | relative_url }}">
-        EP{{episode.episode_number}}: {{ episode.title | escape }}
-      </a>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    </h3>
-    <span class="post-meta">{{ episode.date | date: date_format }}</span>
-  </li>
-  <li>
-    <h3>
-      <a class="post-link" href="{{ episode.url | relative_url }}">
-        EP{{episode.episode_number}}: {{ episode.title | escape }}
-      </a>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    </h3>
-    <span class="post-meta">{{ episode.date | date: date_format }}</span>
-  </li>
-  <li>
-    <h3>
-      <a class="post-link" href="{{ episode.url | relative_url }}">
-        EP{{episode.episode_number}}: {{ episode.title | escape }}
-      </a>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    </h3>
-    <span class="post-meta">{{ episode.date | date: date_format }}</span>
-  </li>
-  <li>
-    <h3>
-      <a class="post-link" href="{{ episode.url | relative_url }}">
-        EP{{episode.episode_number}}: {{ episode.title | escape }}
-      </a>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    </h3>
-    <span class="post-meta">{{ episode.date | date: date_format }}</span>
-  </li>
-  <li>
-    <h3>
-      <a class="post-link" href="{{ episode.url | relative_url }}">
-        EP{{episode.episode_number}}: {{ episode.title | escape }}
-      </a>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    </h3>
-    <span class="post-meta">{{ episode.date | date: date_format }}</span>
-  </li>
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+<div class="episode-list">
+  {%- for episode in include.episodes -%}
+  <a class="episode-link" href="{{ episode.url | relative_url }}">
+    <div class="episode-list-item">
+      <div class="image-box">
+        <img src="{{episode.podcast_image}}">
+      </div>
+      <div class="info-box">
+        <h3>
+          {{ episode.title | escape }}
+        </h3>
+        <span class="episode-meta">
+          Episode #{{ episode.episode_number }}
+          -
+          {{ episode.date | date: date_format }}
+        </span>
+        <div class="description">
+          {{ episode.podcast_summary }}
+        </div>
+      </div>
+    </div>
+  </a>
   {%- endfor -%}
-</ul>
+</div>
