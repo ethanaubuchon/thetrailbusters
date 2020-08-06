@@ -1,7 +1,7 @@
 ---
 layout: episode
-title: "Gearing Up for Adventure"
-slug: "ep1"
+title: "Salt Spring Adventures"
+slug: "ep2"
 date: 2020-08-6 11:30:00
 explicit: false
 categories: ["hiking", "camping", "outdoors", "adventure", "travel", "gear"]
