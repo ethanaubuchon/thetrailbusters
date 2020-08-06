@@ -2,6 +2,7 @@
 layout: episode
 title: "Gearing Up for Adventure"
 slug: "ep1"
+podcast_guid: "ttb-ep002"
 date: 2020-07-23 11:30:00
 explicit: false
 categories: ["hiking", "camping", "outdoors", "adventure", "travel", "gear"]
