@@ -2,6 +2,7 @@
 layout: episode
 title: "Salt Spring Adventures"
 slug: "ep2"
+podcast_guid: "ttb-ep002"
 date: 2020-08-6 11:30:00
 explicit: false
 categories: ["hiking", "camping", "outdoors", "adventure", "travel", "gear"]
