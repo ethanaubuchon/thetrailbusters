@@ -13,5 +13,5 @@ podcast_summary: "From hiking the through Patagonia, to navigating a sail boat a
 podcast_image: "/img/trailbusters.jpg"
 podcast_image_alt: "The Trail Busters Logo"
 podcast_duration: "36:50"
-podcast_length: 64421998
+podcast_length: 53545547
 ---
