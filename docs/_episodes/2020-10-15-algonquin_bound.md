@@ -3,7 +3,7 @@ layout: episode
 title: "Algonquin Bound"
 slug: "ep7"
 podcast_guid: "ttb-ep006"
-date: 2020-15-01 8:10:00
+date: 2020-10-15 8:10:00
 explicit: false
 categories: ["hiking", "camping", "outdoors", "adventure", "travel", "gear"]
 author: Ethan Aubuchon, Bing Lin, and Will Damon
