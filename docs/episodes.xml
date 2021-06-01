@@ -50,10 +50,10 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
       <category>{{ category}}</category>
       {% endfor %}
       <guid isPermaLink="true">{{ site.url }}/podcasts/{{ ep.podcast_file }}</guid>
-      <description>{{ep.summary}}</description>
+      <description>{{ep.podcast_summary}}</description>
 
       <enclosure url=" {{site.url }}/podcasts/{{ ep.podcast_file }}" length="{{ ep.podcast_length }}" type="audio/mpeg" />
-      <itunes:summary>{{ep.summary}}</itunes:summary>
+      <itunes:summary>{{ep.podcast_summary}}</itunes:summary>
       <itunes:author>{{ site.podcast_author }}</itunes:author>
       <itunes:image href="{{ site.url }}{{ site.podcast_album_art }}" />
       <itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
