@@ -3,7 +3,7 @@ layout: episode
 title: "Leaving No Trace"
 slug: "ep12"
 podcast_guid: "ttb-ep012"
-date: 2021-06-03 11:30:00
+date: 2021-06-17 11:30:00
 explicit: false
 categories: ["hiking", "camping", "outdoors", "adventure", "travel", "gear"]
 author: Ethan Aubuchon, Bing Lin, and Will Damon
