@@ -3,7 +3,7 @@ layout: episode
 title: "Will's Big Bike Adventure Part 2"
 slug: "ep18"
 podcast_guid: "ttb-ep018"
-date: 2021-08-26 06:00:00
+date: 2021-09-09 06:00:00
 explicit: false
 categories: ["hiking", "camping", "outdoors", "adventure", "travel", "gear"]
 author: Ethan Aubuchon, Bing Lin, and Will Damon
