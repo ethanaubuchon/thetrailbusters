@@ -1,17 +1,17 @@
 ---
 layout: episode
-title: "Will's Great Bike Adventure"
-slug: "ep17"
-podcast_guid: "ttb-ep017"
-date: 2021-08-26 06:00:00
+title: "A Summer in Review"
+slug: "ep20"
+podcast_guid: "ttb-ep020"
+date: 2021-10-21 06:00:00
 explicit: false
 categories: ["hiking", "camping", "outdoors", "adventure", "travel", "gear"]
 author: Ethan Aubuchon, Bing Lin, and Will Damon
-episode_number: "17"
-podcast_file: the-trail-busters-ep17-wills-great-bike-adventure.mp3
-podcast_summary: "This episode we discuss bike camping as Will prepares to set off on a multi-day bike trip from Prince Edward County to Montreal. We dive into the differences between biking for fitness and touring. And Will gives great advice on how you too could try this adventurous outdoor activity. So strap on your helmet because we're peddling towards adventure."
+episode_number: "20"
+podcast_file: the-trail-busters-ep20-a-summer-in-review.mp3
+podcast_summary: "Ethan, Bing and Will take some time to go back over their summer adventures, comparing what they planned to what they actually did."
 podcast_image: "/img/trailbusters.jpg"
 podcast_image_alt: "The Trail Busters Logo"
-podcast_duration: "38:54"
+podcast_duration: "25:37"
 podcast_length: 4155153
 ---
